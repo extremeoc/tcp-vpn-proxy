@@ -47,7 +47,10 @@ PORT : Server port. Ex: 80
 ```console
  docker run -d --restart=always -p {PORT}:{PORT} --env Domain={Domain} --env Password={Password} --env PORT={PORT} amircloner/tcp-vpn-proxy:v1.0.0
  ```
-  
+ ```console
+ docker run -d --restart=always -p 80:80 --env Domain=Domain.com --env Password=0734e365-ac11-43b0-97d0-7923477e6dd5 --env PORT=80 amircloner/tcp-vpn-proxy:v1.0.0
+
+```
 ### 1.5 Connect Server to ArvanCloud CDN
 	
 
